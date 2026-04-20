@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Naresh</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Scanline overlay -->
+  <div class="scanlines"></div>
+  <!-- Grid background -->
+  <div class="grid-bg"></div>
+
+  <!-- ============ NAV ============ -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="bracket">[</span>Naresh<span class="bracket">]</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link"><span class="nav-num">01.</span>Home</a></li>
+      <li><a href="#about" class="nav-link"><span class="nav-num">02.</span>About</a></li>
+      <li><a href="#projects" class="nav-link"><span class="nav-num">03.</span>Projects</a></li>
+      <li><a href="#skills" class="nav-link"><span class="nav-num">04.</span>Skills</a></li>
+      <li><a href="#achievements" class="nav-link"><span class="nav-num">05.</span>Achievements</a></li>
+      <li><a href="#resume" class="nav-link"><span class="nav-num">06.</span>Resume</a></li>
+      <li><a href="#contact" class="nav-link"><span class="nav-num">07.</span>Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">~/igris — bash</span>
+        </div>
+        <div class="terminal-body">
+          <p class="terminal-line"><span class="prompt">igris@kali:~$</span> <span class="cmd">whoami</span></p>
+          <p class="terminal-output glitch" data-text="NARESH">NARESH</p>
+          <p class="terminal-line"><span class="prompt">igris@kali:~$</span> <span class="cmd">cat roles.txt</span></p>
+          <p class="terminal-output"><span id="typed-role"></span><span class="cursor-blink">█</span></p>
+          <p class="terminal-line"><span class="prompt">igris@kali:~$</span> <span class="cmd">cat location.txt</span></p>
+          <p class="terminal-output"> Krishnagiri,Tamil Nadu</p>
+          <p class="terminal-line"><span class="prompt">igris@kali:~$</span> <span class="cmd">./init_portfolio.sh</span></p>
+          <p class="terminal-output">Initializing... <span class="blink-text">Access Granted ✓</span></p>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary"><i class="fa fa-code"></i> View My Work</a>
+        <a href="#contact" class="btn-outline"><i class="fa fa-terminal"></i> Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="scroll-indicator">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 02. about_me</span>
+        <h2>About <span class="accent">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="avatar-frame">
+            <div class="avatar-inner">
+              <i class="fa fa-user-secret avatar-icon"></i>
+            </div>
+            <div class="avatar-ring ring1"></div>
+            <div class="avatar-ring ring2"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Projects</span></div>
+            <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Tech Stacks</span></div>
+            <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Curiosity</span></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="about-intro">Hey, I'm <strong>Naresh</strong> — a Computer Science student from Krishnagiri, Tamil Nadu.</p>
+          <p>I'm passionate about breaking things (ethically), building things, and understanding the systems that run our digital world. My journey spans <span class="highlight">Cybersecurity</span> and <span class="highlight">Web Development</span>.</p>
+          <p>When I'm not analyzing malware samples or writing Python scripts, I'm crafting web experiences or digging into network protocols. I believe in learning by doing — every project is a new exploit to master.</p>
+          <div class="about-tags">
+            <span class="tag"><i class="fa fa-shield-halved"></i> Cybersecurity</span>
+            <span class="tag"><i class="fa fa-globe"></i> Web Dev</span>
+            <span class="tag"><i class="fa fa-network-wired"></i> Networking</span>
+            <span class="tag"><i class="fa fa-bug"></i> Ethical Hacking</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section alt-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 03. projects</span>
+        <h2>Featured <span class="accent">Projects</span></h2>
+      </div>
+
+      <!-- Featured Projects -->
+      <div class="projects-featured">
+
+        <div class="project-card featured" data-tilt>
+          <div class="card-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fa fa-network-wired"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/nareshyl/mini-nmap-tool" target="_blank" rel="noopener noreferrer" class="icon-link" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://mini-nmap-tool.onrender.com/" target="_blank" rel="noopener noreferrer" class="icon-link" title="Live Demo"><i class="fa fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-badge">Security Tool</div>
+          <h3 class="project-title">Mini Nmap Network Scanner</h3>
+          <p class="project-desc">A Python + Flask web application that replicates core Nmap functionality — scan ports, detect services, identify open/closed/filtered states, and visualize results in a clean browser UI. Built for learning and demonstration purposes.</p>
+          <ul class="project-features">
+            <li>Port range scanning with real-time feedback</li>
+            <li>Service & OS fingerprinting</li>
+            <li>REST API with Flask backend</li>
+            <li>Responsive dashboard interface</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span><span>Flask</span><span>Nmap</span><span>HTML/CSS</span><span>JS</span>
+          </div>
+        </div>
+
+        <div class="project-card featured" data-tilt>
+          <div class="card-glow"></div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fa fa-virus-slash"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/nareshyl/malware-analyzer" target="_blank" rel="noopener noreferrer" class="icon-link" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://malware-behaviour-analyzer-with-threat.onrender.com/" target="_blank" rel="noopener noreferrer" class="icon-link" title="Live Demo"><i class="fa fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-badge">Threat Intel</div>
+          <h3 class="project-title">Malware Behaviour & Threat Intelligence Analyzer</h3>
+          <p class="project-desc">Analyzes malware samples in a sandboxed environment to extract behavioral patterns, network IOCs, and registry modifications. Integrates threat intelligence feeds to classify and score threats automatically.</p>
+          <ul class="project-features">
+            <li>Static & dynamic analysis pipeline</li>
+            <li>IOC extraction & YARA rule matching</li>
+            <li>Threat scoring & classification</li>
+            <li>Visual report generation</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span><span>YARA</span><span>Cuckoo</span><span>VirusTotal API</span><span>Flask</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Web Projects Grid -->
+      <div class="web-projects-header">
+        <span class="section-sub">// Web Development Projects</span>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card mini" data-tilt>
+          <div class="project-header">
+            <div class="project-icon small"><i class="fa fa-cloud-sun"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/nareshyl/climate" target="_blank" rel="noopener noreferrer" class="icon-link" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://nareshyl.github.io/climate/" target="_blank" rel="noopener noreferrer" class="icon-link" title="Live"><i class="fa fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Climate App</h3>
+          <p class="project-desc">A weather-focused web app built with HTML, CSS, and JavaScript.</p>
+          <div class="project-tech"><span>JS</span><span>HTML</span><span>CSS</span></div>
+        </div>
+
+        <div class="project-card mini" data-tilt>
+          <div class="project-header">
+            <div class="project-icon small"><i class="fa fa-stopwatch"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/nareshyl/stopwatch" target="_blank" rel="noopener noreferrer" class="icon-link" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://nareshyl.github.io/stopwatch/" target="_blank" rel="noopener noreferrer" class="icon-link" title="Live"><i class="fa fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Stopwatch</h3>
+          <p class="project-desc">A simple stopwatch application built with HTML, CSS, and JavaScript.</p>
+          <div class="project-tech"><span>JS</span><span>HTML</span><span>CSS</span></div>
+        </div>
+
+        <div class="project-card mini" data-tilt>
+          <div class="project-header">
+            <div class="project-icon small"><i class="fa fa-stopwatch"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/nareshyl/Password-Generator-" target="_blank" rel="noopener noreferrer" class="icon-link" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://nareshyl.github.io/Password-Generator-/" target="_blank" rel="noopener noreferrer" class="icon-link" title="Live"><i class="fa fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Password Generator</h3>
+          <p class="project-desc">A simple password generator application built with HTML, CSS, and JavaScript.</p>
+          <div class="project-tech"><span>JS</span><span>HTML</span><span>CSS</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 04. skills</span>
+        <h2>Tech <span class="accent">Arsenal</span></h2>
+      </div>
+      <div class="skills-container">
+
+        <div class="skill-category">
+          <div class="skill-cat-header"><i class="fa fa-code"></i> Languages</div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <i class="fab fa-java"></i>
+              <span>Java</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-html5"></i>
+              <span>HTML5</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="95"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS3</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-js"></i>
+              <span>JavaScript</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fa fa-code"></i>
+              <span>C</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header"><i class="fa fa-shield-halved"></i> Cybersecurity</div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fa fa-network-wired"></i>
+              <span>Networking</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fa fa-bug"></i>
+              <span>Ethical Hacking</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fa fa-magnifying-glass"></i>
+              <span>Threat Analysis</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fa fa-lock"></i>
+              <span>OSINT</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fa fa-lock"></i>
+              <span>Capture The Flag</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header"><i class="fa fa-server"></i> Frameworks & Tools</div>
+          <div class="skill-items">
+            
+            <div class="skill-item">
+              <i class="fab fa-git-alt"></i>
+              <span>Git & GitHub</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-linux"></i>
+              <span>Linux / Kali</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-linux"></i>
+              <span>TryHackMe (Top 3%)</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="78"></div></div>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tool badges -->
+      <div class="tool-badges">
+        <span class="tool-badge"><i class="fab fa-python"></i> Python</span>
+        <span class="tool-badge"><i class="fa fa-code"></i> C</span>
+        <span class="tool-badge"><i class="fab fa-java"></i> Java</span>
+        <span class="tool-badge"><i class="fab fa-android"></i> Kotlin</span>
+        <span class="tool-badge"><i class="fab fa-js"></i> JavaScript</span>
+        <span class="tool-badge"><i class="fab fa-linux"></i> Kali Linux</span>
+        <span class="tool-badge"><i class="fa fa-terminal"></i> Bash</span>
+        <span class="tool-badge"><i class="fa fa-shield"></i> Nmap</span>
+        <span class="tool-badge"><i class="fab fa-github"></i> GitHub</span>
+        <span class="tool-badge"><i class="fa fa-database"></i> SQL</span>
+        <span class="tool-badge"><i class="fa fa-flask"></i> Flask</span>
+        <span class="tool-badge"><i class="fa fa-network-wired"></i> Wireshark</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section id="achievements" class="section alt-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 05. achievements</span>
+        <h2>My <span class="accent">Achievements</span></h2>
+      </div>
+      <ul class="achievements-list">
+        <li>Participated in National level Symposium - CTF (Cybertron)</li>
+        <li>TryHackMe (Top 3%)</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ============ RESUME ============ -->
+  <section id="resume" class="section alt-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 06. resume</span>
+        <h2>My <span class="accent">Resume</span></h2>
+      </div>
+      <div class="resume-card">
+        <div class="resume-content">
+          <div class="resume-icon-wrap">
+            <i class="fa fa-file-lines resume-icon"></i>
+            <div class="resume-pulse"></div>
+          </div>
+          <div class="resume-info">
+            <h3>Naresh — Full Resume</h3>
+            <p>CS Student · Cybersecurity · Web Dev</p>
+            <ul class="resume-highlights">
+              <li><i class="fa fa-check"></i> Education & Coursework</li>
+              <li><i class="fa fa-check"></i> Projects & Experience</li>
+              <li><i class="fa fa-check"></i> Certifications & Skills</li>
+            </ul>
+          </div>
+          <a href="" class="btn-primary download-btn" download>
+            <i class="fa fa-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 07. contact</span>
+        <h2>Get In <span class="accent">Touch</span></h2>
+      </div>
+      <p class="contact-intro">I'm currently open to internships, collaborations, and interesting projects. Whether it's security research, web dev, or just a good tech conversation — my inbox is open.</p>
+
+      <div class="contact-grid">
+        <a href="mailto:naresh@example.com" class="contact-card">
+          <div class="contact-icon"><i class="fa fa-envelope"></i></div>
+          <div class="contact-info">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">nareshk12@outlook.in</span>
+          </div>
+          <i class="fa fa-arrow-right contact-arrow"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/naresh-k-203152295/" target="_blank" class="contact-card">
+          <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+          <div class="contact-info">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/Naresh</span>
+          </div>
+          <i class="fa fa-arrow-right contact-arrow"></i>
+        </a>
+        <a href="https://github.com/nareshyl" target="_blank" class="contact-card">
+          <div class="contact-icon"><i class="fab fa-github"></i></div>
+          <div class="contact-info">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/nareshyl</span>
+          </div>
+          <i class="fa fa-arrow-right contact-arrow"></i>
+        </a>
+      </div>
+
+      <div class="contact-cta">
+        <a href="mailto:nareshk12@outlook.in" class="btn-primary large">
+          <i class="fa fa-paper-plane"></i> Send Message
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo"><span class="bracket">[</span>Naresh<span class="bracket">]</span></div>
+      <p class="footer-text">Designed & Built by <span class="accent">Naresh</span></p>
+      <p class="footer-copy">
+        <i class="fa fa-lock"></i> Secured with good code. No trackers. No cookies. Just vibes.
+      </p>
+      <div class="footer-links">
+        <a href="tel:+917604908540"><i class="fa fa-phone"></i></a>
+        <a href="https://github.com/nareshyl" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/naresh-k-203152295/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:nareshk12@outlook.in"><i class="fa fa-envelope"></i></a>
+      </div>
+      <p class="footer-bottom">© 2025 Naresh · All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
