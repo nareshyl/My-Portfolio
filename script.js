@@ -221,7 +221,7 @@ function initCursorGlow() {
     position: fixed;
     width: 300px; height: 300px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(0,255,224,0.04) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(30,144,255,0.04) 0%, transparent 70%);
     pointer-events: none;
     z-index: 9998;
     transform: translate(-50%, -50%);
@@ -245,11 +245,10 @@ function setYear() {
 document.addEventListener("DOMContentLoaded", () => {
   bootTerminal();
   setTimeout(typeRole, 1200);
-  createParticles();
   addRevealClasses();
   observeReveal();
   animateSkillBars();
   initTilt();
-  initCursorGlow();
+  // Particle background and cursor glow removed per user request
   setYear();
 });

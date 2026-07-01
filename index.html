@@ -24,52 +24,57 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="nav-links">
-      <li><a href="#home" class="nav-link"><span class="nav-num">01.</span>Home</a></li>
-      <li><a href="#about" class="nav-link"><span class="nav-num">02.</span>About</a></li>
-      <li><a href="#projects" class="nav-link"><span class="nav-num">03.</span>Projects</a></li>
-      <li><a href="#skills" class="nav-link"><span class="nav-num">04.</span>Skills</a></li>
-      <li><a href="#achievements" class="nav-link"><span class="nav-num">05.</span>Achievements</a></li>
-      <li><a href="#resume" class="nav-link"><span class="nav-num">06.</span>Resume</a></li>
-      <li><a href="#contact" class="nav-link"><span class="nav-num">07.</span>Contact</a></li>
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#resume" class="nav-link">Resume</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
   </nav>
 
   <!-- ============ HERO ============ -->
-  <section id="home" class="hero">
+  <section class="hero">
+
     <div class="hero-content">
-      <div class="hero-terminal">
-        <div class="terminal-bar">
-          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-          <span class="terminal-title">~/igris — bash</span>
+
+        <p class="subtitle">Hello, I'm</p>
+
+        <h1>Naresh K</h1>
+
+        <h2>
+            <span>Electrical & Electronics Engineering Student</span>
+        </h2>
+
+        <p class="description">
+            Passionate about Web Development, Cybersecurity, Embedded Systems,
+            and creating modern, user-friendly applications. I enjoy solving
+            real-world problems with technology.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-outline">Contact Me</a>
         </div>
-        <div class="terminal-body">
-          <p class="terminal-line"><span class="prompt">igris@kali:~$</span> <span class="cmd">whoami</span></p>
-          <p class="terminal-output glitch" data-text="NARESH">NARESH</p>
-          <p class="terminal-line"><span class="prompt">igris@kali:~$</span> <span class="cmd">cat roles.txt</span></p>
-          <p class="terminal-output"><span id="typed-role"></span><span class="cursor-blink">█</span></p>
-          <p class="terminal-line"><span class="prompt">igris@kali:~$</span> <span class="cmd">cat location.txt</span></p>
-          <p class="terminal-output"> Krishnagiri,Tamil Nadu</p>
-          <p class="terminal-line"><span class="prompt">igris@kali:~$</span> <span class="cmd">./init_portfolio.sh</span></p>
-          <p class="terminal-output">Initializing... <span class="blink-text">Access Granted ✓</span></p>
+
+    </div>
+
+    <div class="hero-image">
+
+        <div class="profile-circle">
+            <img src="images/IMG_20240112_100808 (1).jpg" alt="Profile" shape ="oval">
         </div>
-      </div>
-      <div class="hero-cta">
-        <a href="#projects" class="btn-primary"><i class="fa fa-code"></i> View My Work</a>
-        <a href="#contact" class="btn-outline"><i class="fa fa-terminal"></i> Get In Touch</a>
-      </div>
+
     </div>
-    <div class="hero-particles" id="particles"></div>
-    <div class="scroll-indicator">
-      <span>SCROLL</span>
-      <div class="scroll-line"></div>
-    </div>
+
   </section>
 
   <!-- ============ ABOUT ============ -->
   <section id="about" class="section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">// 02. about_me</span>
+        <span class="section-tag">about_me</span>
         <h2>About <span class="accent">Me</span></h2>
       </div>
       <div class="about-grid">
@@ -106,7 +111,7 @@
   <section id="projects" class="section alt-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">// 03. projects</span>
+        <span class="section-tag">projects</span>
         <h2>Featured <span class="accent">Projects</span></h2>
       </div>
 
@@ -163,7 +168,7 @@
 
       <!-- Web Projects Grid -->
       <div class="web-projects-header">
-        <span class="section-sub">// Web Development Projects</span>
+        <span class="section-sub">Web Development Projects</span>
       </div>
       <div class="projects-grid">
         <div class="project-card mini" data-tilt>
@@ -212,120 +217,152 @@
   <!-- ============ SKILLS ============ -->
   <section id="skills" class="section">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">// 04. skills</span>
-        <h2>Tech <span class="accent">Arsenal</span></h2>
-      </div>
-      <div class="skills-container">
 
-        <div class="skill-category">
-          <div class="skill-cat-header"><i class="fa fa-code"></i> Languages</div>
-          <div class="skill-items">
-            <div class="skill-item">
-              <i class="fab fa-python"></i>
-              <span>Python</span>
-              <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
-            </div>
-
-            <div class="skill-item">
-              <i class="fab fa-java"></i>n  
-              <span>Java</span>
-              <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
-            </div>
-            <div class="skill-item">
-              <i class="fab fa-html5"></i>
-              <span>HTML5</span>
-              <div class="skill-bar"><div class="skill-fill" data-w="95"></div></div>
-            </div>
-            <div class="skill-item">
-              <i class="fab fa-css3-alt"></i>
-              <span>CSS3</span>
-              <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
-            </div>
-            <div class="skill-item"> wr,
-              <i class="fab fa-js"></i>
-              <span>JavaScript</span>
-              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
-            </div>
-            <div class="skill-item">
-              <i class="fa fa-code"></i>
-              <span>C</span>
-              <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
-            </div>
-          </div>
+        <div class="section-header">
+            <span class="section-tag">skills</span>
+            <h2>Tech <span class="accent">Arsenal</span></h2>
         </div>
 
-        <div class="skill-category">
-          <div class="skill-cat-header"><i class="fa fa-shield-halved"></i> Cybersecurity</div>
-          <div class="skill-items">
-            <div class="skill-item">
-              <i class="fa fa-network-wired"></i>
-              <span>Networking</span>
-              <div class="skill-bar"><div class="skill-fill" data-w="82"></div></div>
+        <div class="skills-container">
+
+            <!-- Languages -->
+            <div class="skill-category">
+
+                <div class="skill-cat-header">
+                    <i class="fa fa-code"></i>
+                    Languages
+                </div>
+
+                <div class="skill-items">
+
+                    <div class="skill-item">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="fab fa-java"></i>
+                        <span>Java</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="fa fa-code"></i>
+                        <span> C </span>
+                    </div>
+
+                </div>
+
             </div>
-            <div class="skill-item">
-              <i class="fa fa-bug"></i>
-              <span>Ethical Hacking</span>
-              <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+
+            <!-- Cybersecurity -->
+            <div class="skill-category">
+
+                <div class="skill-cat-header">
+                    <i class="fa fa-shield-halved"></i>
+                    Cybersecurity
+                </div>
+
+                <div class="skill-items">
+
+                    <div class="skill-item">
+                        <i class="fa fa-network-wired"></i>
+                        <span>Networking</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="fa fa-bug"></i>
+                        <span>Ethical Hacking</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="fa fa-magnifying-glass"></i>
+                        <span>Threat Analysis</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="fa fa-lock"></i>
+                        <span>OSINT</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="fa fa-flag"></i>
+                        <span>Capture The Flag</span>
+                    </div>
+
+                </div>
+
             </div>
-            <div class="skill-item">
-              <i class="fa fa-magnifying-glass"></i>
-              <span>Threat Analysis</span>
-              <div class="skill-bar"><div class="skill-fill" data-w="78"></div></div>
+
+            <!-- Frameworks -->
+            <div class="skill-category">
+
+                <div class="skill-cat-header">
+                    <i class="fa fa-server"></i>
+                    Frameworks & Tools
+                </div>
+
+                <div class="skill-items">
+
+                    <div class="skill-item">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git & GitHub</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="fab fa-linux"></i>
+                        <span>Linux / Kali Linux</span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="fa fa-network-wired"></i>
+                        <span> Wireshark </span>
+                    </div>
+
+                    <div class="skill-item">
+                        <i class="fa fa-terminal"></i>
+                        <span>Nmap</span>
+                    </div>
+
+                </div>
+
             </div>
-            <div class="skill-item">
-              <i class="fa fa-lock"></i>
-              <span>OSINT</span>
-              <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
-            </div>
-            <div class="skill-item">
-              <i class="fa fa-lock"></i>
-              <span>Capture The Flag</span>
-              <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
-            </div>
-          </div>
+
         </div>
 
-        <div class="skill-category">
-          <div class="skill-cat-header"><i class="fa fa-server"></i> Frameworks & Tools</div>
-          <div class="skill-items">
-            
-            <div class="skill-item">
-              <i class="fab fa-git-alt"></i>
-              <span>Git & GitHub</span>
-              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
-            </div>
-            <div class="skill-item">
-              <i class="fab fa-linux"></i>
-              <span>Linux / Kali</span>
-              <div class="skill-bar"><div class="skill-fill" data-w="78"></div></div>
-            </div>
-            <div class="skill-item">
-              <i class="fab fa-linux"></i>
-              <span>TryHackMe (Top 3%)</span>
-              <div class="skill-bar"><div class="skill-fill" data-w="78"></div></div>
-            </div>
-            
-          </div>
+        <!-- Tool Badges -->
+
+        <div class="tool-badges">
+
+            <span class="tool-badge"><i class="fab fa-python"></i>Python</span>
+            <span class="tool-badge"><i class="fab fa-java"></i>Java</span>
+            <span class="tool-badge"><i class="fab fa-html5"></i>HTML5</span>
+            <span class="tool-badge"><i class="fab fa-css3-alt"></i>CSS3</span>
+            <span class="tool-badge"><i class="fab fa-js"></i>JavaScript</span>
+            <span class="tool-badge"><i class="fa fa-code"></i>C</span>
+            <span class="tool-badge"><i class="fab fa-github"></i>GitHub</span>
+            <span class="tool-badge"><i class="fab fa-linux"></i>Kali Linux</span>
+            <span class="tool-badge"><i class="fa fa-terminal"></i>Bash</span>
+            <span class="tool-badge"><i class="fa fa-shield"></i>Nmap</span>
+            <span class="tool-badge"><i class="fa fa-network-wired"></i>Wireshark</span>
+            <span class="tool-badge"><i class="fa fa-database"></i>SQL</span>
+
         </div>
 
-      </div>
-
-      <!-- Tool badges -->
-      <div class="tool-badges">
-        <span class="tool-badge"><i class="fab fa-python"></i> Python</span>
-        <span class="tool-badge"><i class="fa fa-code"></i> C</span>
-        <span class="tool-badge"><i class="fab fa-java"></i> Java</span>
-        <span class="tool-badge"><i class="fab fa-android"></i> Kotlin</span>
-        <span class="tool-badge"><i class="fab fa-js"></i> JavaScript</span>
-        <span class="tool-badge"><i class="fab fa-linux"></i> Kali Linux</span>
-        <span class="tool-badge"><i class="fa fa-terminal"></i> Bash</span>
-        <span class="tool-badge"><i class="fa fa-shield"></i> Nmap</span>
-        <span class="tool-badge"><i class="fab fa-github"></i> GitHub</span>
-        <span class="tool-badge"><i class="fa fa-database"></i> SQL</span>
-        <span class="tool-badge"><i class="fa fa-flask"></i> Flask</span>
-        <span class="tool-badge"><i class="fa fa-network-wired"></i> Wireshark</span>
-      </div>
     </div>
   </section>
 
@@ -333,7 +370,7 @@
   <section id="achievements" class="section alt-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">// 05. achievements</span>
+        <span class="section-tag">// achievements</span>
         <h2>My <span class="accent">Achievements</span></h2>
       </div>
       <ul class="achievements-list">
@@ -348,7 +385,7 @@
   <section id="resume" class="section alt-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">// 06. resume</span>
+        <span class="section-tag">// resume</span>
         <h2>My <span class="accent">Resume</span></h2>
       </div>
       <div class="resume-card">
@@ -378,7 +415,7 @@
   <section id="contact" class="section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">// 07. contact</span>
+        <span class="section-tag">// contact</span>
         <h2>Get In <span class="accent">Touch</span></h2>
       </div>
       <p class="contact-intro">I'm currently open to internships, collaborations, and interesting projects. Whether it's security research, web dev, or just a good tech conversation — my inbox is open.</p>
